@@ -12,7 +12,7 @@ import {
 import AppLoading from 'expo-app-loading'; // hold a splash screen
 import { ThemeProvider } from 'styled-components'; // create a context with our theme in order to deliver it to the entire App
 
-import { Scheduling } from './src/screens/Scheduling';
+import { SchedulingDetails } from './src/screens/SchedulingDetails';
 import theme from './src/styles/theme';
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Scheduling />
+      <SchedulingDetails />
     </ThemeProvider>
   );
 }
