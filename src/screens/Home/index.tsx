@@ -15,7 +15,7 @@ const AnimatedButton = Animated.createAnimatedComponent(RectButton);
 import api from '../../services/api';
 import { CarDTO } from '../../dtos/CarDTO';
 import { Car } from '../../components/Car';
-import { Load } from '../../components/Load';
+import { LoadAnimation } from '../../components/LoadAnimation';
 
 import Logo from '../../assets/logo.svg';
 import { Ionicons } from '@expo/vector-icons';
@@ -98,7 +98,7 @@ export function Home() {
       </Header>
 
       {loading ? (
-        <Load />
+        <LoadAnimation />
       ) : (
         <CarList
           data={cars}
